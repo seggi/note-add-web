@@ -1,0 +1,48 @@
+.auth-content {
+    width: 400px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    background: #3EB489;
+    border-radius: 4px;
+}
+
+.auth-title {
+    color: black;
+    font-weight: 600;
+    font-size: 28px;
+    float: left;
+    margin-left: 0px;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+}
+
+.input-box input {
+    width: 80%;
+    padding: 8px;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.input-box button {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    width: 85%;
+    padding: 8px;
+    border-radius: 4px;
+    margin-top: 30px;
+    background-color: black;
+}
+
+.auth-content a  {
+    color: #000;
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 5px;
+    margin-top: 30px;
+}
