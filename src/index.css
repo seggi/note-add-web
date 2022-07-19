@@ -11,3 +11,24 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.auth-box__row {
+  display: flex;
+  flex-direction: row;
+  width: 500px;
+  height: 700px;
+  background: #3EB489;
+  border-radius: 4px;
+}
+
+.auth-box__row .auth-content {
+  width: 80%;
+}
+
+.auth-box__row .change-widget-btn {
+  width: 20%;
+}
+
+.change-widget-btn button {
+  justify-items: center;
+}

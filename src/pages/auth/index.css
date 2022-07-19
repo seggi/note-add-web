@@ -3,7 +3,7 @@
     height: 600px;
     display: flex;
     flex-direction: column;
-    background: #3EB489;
+    background: inherit;
     border-radius: 4px;
 }
 
