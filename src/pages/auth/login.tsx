@@ -17,9 +17,9 @@ export const Login =  () => {
                         </button>
                     </form>
                 </div>
-                <a  href="#">
+                <button className="switch-widget">
                     You don't have account? click here
-                </a>
+                </button>
             </div>
         </>
     )

@@ -19,6 +19,7 @@
     display: flex;
     flex-direction: column;
     padding: 8px;
+    margin-top: 40px;
 }
 
 .input-box input {
@@ -39,10 +40,26 @@
     background-color: black;
 }
 
-.auth-content a  {
+.input-box button:hover {
+    cursor: pointer;
+}
+
+.auth-content .switch-widget  {
     color: #000;
     font-size: 14px;
-    font-weight: 600;
-    margin-left: 5px;
+    font-weight: 300;
     margin-top: 30px;
+    margin-left: 0px;
+    padding: 0px;
+    border: none;
+    background-color: inherit;
+    text-align: left;
+    align-self: center;
+    width: 80%;
+    
+}
+
+.switch-widget:hover {
+    cursor: pointer;
+    color: #333;
 }
