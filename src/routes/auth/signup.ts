@@ -3,8 +3,8 @@ import { lazy } from 'react';
 
 export default {
     exact: true,
-    name: 'sign in',
+    name: 'sign up',
     protected: false,
-    path: '/login',
-    component: lazy(() => import('../../containers/auth/login'))
+    path: '/signup',
+    component: lazy(() => import('../../containers/auth/signup'))
 };

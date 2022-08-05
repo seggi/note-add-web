@@ -4,8 +4,6 @@ import './App.css';
 import routes from './routes';
 
 function App() {
-    const [showWidget, setShowWidget] = useState(false);
-
     return (
         <div className="App">
             <BrowserRouter>
