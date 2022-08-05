@@ -1,37 +1,25 @@
-import React, { useState } from 'react';
+import React, { Suspense, useState } from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
-import { LoginPage } from './pages/auth/login';
-import { SignUpPage } from './pages/auth/signup';
+import routes from './routes';
+import Login from './routes/auth/login';
 
 function App() {
-  const [showWidget, setShowWidget] = useState(false);
+    const [showWidget, setShowWidget] = useState(false);
 
-
-
-  return (
-    <div className="App">
-      <header className="App-header">
-        <div className="auth-box__row">
-          <div className="auth-content">
-            {showWidget !== false 
-            ? <SignUpPage />
-            : <LoginPage/>
-            }
-          </div>
-          <div className="change-widget-btn">
-            <button onClick={
-              () => {
-                setShowWidget(true)
-              }
-            }>
-              Sign up
-            </button>
-          </div>
+    return (
+        <div className="App">
+            <BrowserRouter>
+                <Suspense fallback={<div>{'Loading...'}</div>}>
+                    <Routes>
+                        {routes.map((route) => (
+                            <Route key={route.name} path={route.path} element={<route.component />} />
+                        ))}
+                    </Routes>
+                </Suspense>
+            </BrowserRouter>
         </div>
-      
-      </header>
-    </div>
-  );
+    );
 }
 
 export default App;
