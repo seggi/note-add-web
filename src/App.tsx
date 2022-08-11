@@ -1,11 +1,11 @@
 import React, { Suspense, useState } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { connect } from 'react-redux';
+
 import './App.css';
 import routes from './routes';
 
 function App() {
-    const [showWidget, setShowWidget] = useState(false);
-
     return (
         <div className="App">
             <BrowserRouter>
