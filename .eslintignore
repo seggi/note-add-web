@@ -1,0 +1,9 @@
+/src/serviceWorker.ts
+node_modules/
+/build/**
+/src/**/*.css
+/src/**/*.scss
+/src/**/*.test.ts
+/src/__tests__
+/src/__mocks__
+ecosystem.config.js
